@@ -1,15 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 body {
-	font-family: "Open Sans Condensed";
-	padding: 20px 60px;
+    font-family: "Open Sans Condensed" !important;
+    padding: 20px 60px;
 }
 
 a {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
