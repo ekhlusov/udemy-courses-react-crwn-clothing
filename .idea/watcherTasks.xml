@@ -3,6 +3,7 @@
   <component name="ProjectTasksOptions">
     <enabled-global>
       <option value="Prettier JSX" />
+      <option value="Prettier" />
       <option value="Prettier SCSS" />
     </enabled-global>
   </component>
