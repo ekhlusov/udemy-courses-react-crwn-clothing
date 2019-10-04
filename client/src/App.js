@@ -10,6 +10,7 @@ import { checkUserSession } from "./redux/user/user.actions";
 import Header from "./components/header/header.component";
 import Spinner from "./components/spinner/spinner.component";
 import ErrorBoundary from "./components/error-boundary/error-boundary.component";
+import * as serviceWorker from './serviceWorker';
 
 const HomePage = lazy(() => import("./pages/homepage/homepage.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.component"));
@@ -17,6 +18,7 @@ const SignInSignOut = lazy(() =>
 	import("./pages/sing-in-sign-out/sing-in-sign-out.component")
 );
 const CheckoutPage = lazy(() => import("./pages/checkout/checkout.component"));
+
 
 const App = ({ checkUserSession, currentUser }) => {
 	useEffect(() => {
@@ -60,3 +62,5 @@ export default connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(App);
+
+serviceWorker.register();
