@@ -17,4 +17,4 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
 		</CartItemDetailsContainer>
 	</CartItemContainer>
 );
-export default CartItem;
+export default React.memo(CartItem); // уменьшает количество ререндеров!
